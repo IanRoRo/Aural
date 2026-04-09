@@ -37,6 +37,11 @@ def main():
             
             # --- LÒGICA DE BURN OUT (Basada en punts, no en felicitat) ---
             if punts_productivitat > 1500: # Exemple: portar molta estona productiva
+                temps_actual = time.time()
+                AVISAR("⚠️ ALERTA DE BURNOUT: Portes massa estona rendint al màxim.\n"
+                       "La teva ment necessita 5 minuts de descans real.\n"
+                       "Aural t'ordena que t'allunyis de la pantalla.")
+                ultim_avis_burnout = temps_actual
                 print("⚠️ Aural: Portes un ritme excel·lent, però vigila el burnout. Descansa 5 minuts.")
                 # Opcionalment, podem fer que els punts baixin una mica al descansar
 
