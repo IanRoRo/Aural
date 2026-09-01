@@ -15,7 +15,7 @@ def ruta_dades_usuari(nom_fitxer):
     else:
         return os.path.join(os.path.dirname(os.path.abspath(__file__)), nom_fitxer)
 
-FITXER_CSV = ruta_dades_usuari("registre_activitat.csv")
+FITXER_CSV = ruta_dades_usuari("registre_activitat_lite.csv")
 
 def mostrar_grafics():
     if not os.path.exists(FITXER_CSV) or os.path.getsize(FITXER_CSV) == 0:
@@ -47,7 +47,7 @@ def mostrar_grafics():
     llista_mesos_num = sorted(df['Mes_Str'].unique())
     
     finestra_est = tk.Tk()
-    finestra_est.title("Aural - Panell d'Estadístiques")
+    finestra_est.title("Aural Lite - Panell d'Estadístiques")
     finestra_est.geometry("950x680")
     finestra_est.config(bg="#f4f4f4")
     
