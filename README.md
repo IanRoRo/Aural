@@ -62,6 +62,6 @@
 
 This repository contains the source code and development logs for the **Aural TDR**. 
 
-- 🌐 **Web Portal:** [Visit project website](https://el-teu-usuari.github.io/aural-web) *(o el teu link)*
+- 🌐 **Web Portal:** [Visit project website](https://iaaural.netlify.app) 
 - 📄 **Full Thesis PDF:** Available in `/docs/Memoria_Aural_TDR.pdf`
 - 🛠️ **Methodology:** Developed using a Copilot-assisted software engineering methodology (AI-assisted architecture & rapid prototyping).
