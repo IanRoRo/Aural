@@ -1,11 +1,32 @@
-# 🤖 Aural — Intelligent Productivity Assistant
+# 🤖 Aural — Assistent de Productivitat Intel·ligent
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Llicència: MIT](https://img.shields.io/badge/Llic%C3%A8ncia-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![AI Models](https://img.shields.io/badge/LLM-Llama_3.2_%7C_DeepSeek--R1-purple.svg)](https://ollama.ai/)
-[![Project Type](https://img.shields.io/badge/TDR-1st_Baccalaureate-orange.svg)]()
+[![Models d'IA](https://img.shields.io/badge/LLM-Llama_3.2_%7C_DeepSeek--R1-purple.svg)](https://ollama.ai/)
+[![Tipus de Projecte](https://img.shields.io/badge/TDR-1r_Batxillerat-orange.svg)]()
 
-> **Languages / Idiomes:** 🇬🇧 [English](#english) | 🐱 [Català](#català) | 🇪🇸 [Español](#español)
+> **Idiomes / Languages:** 🐱 [Català](#català) | 🇬🇧 [English](#english) | 🇪🇸 [Español](#español)
+
+---
+
+<a name="català"></a>
+## 🐱 Resum en Català
+
+**Aural** és un assistent de productivitat intel·ligent, privat i d'execució local dissenyat per reduir les distraccions digitals durant les sessions d'estudi. Desenvolupat com a Treball de Recerca (TDR) de 1r de Batxillerat en un termini de 3 mesos, combina el monitoratge del sistema operatiu en temps real amb IA local (mitjançant Ollama) i un algorisme d'adaptació basat en l'estat d'ànim i la felicitat de l'assistent.
+
+### ✨ Característiques Principals
+- **IA Privada i Local:** S'executa 100% offline utilitzant els models `Llama 3.2` i `DeepSeek-R1` a través d'Ollama.
+- **Monitoratge Actiu del SO:** `ulls.py` rastreja el focus de la finestra activa i les pulsacions de tecles en temps real.
+- **Bloqueig Dinàmic:** `mans.py` força el focus de treball tancant els processos de distracció no desitjats mitjançant l'avaluació per PLN (Processament del Llenguatge Natural).
+- **Acompanyant Adaptatiu:** `fantasma.py` inclou un algorisme d'estat emocional/felicitat que reacciona directament als nivells de productivitat de l'usuari.
+- **Analítica Personalitzada:** `grafics.py` genera informes visuals sobre la distribució del temps utilitzant Pandas i Matplotlib.
+
+### 🏗️ Arquitectura i Mòduls
+- `ulls.py` — Monitoratge de finestres i activitat (`pygetwindow`, `pynput`, `psutil`)
+- `mans.py` — Gestor dinàmic de processos i control de finestres
+- `fantasma.py` — Lògica d'estat emocional i giny visual interactiu
+- `grafics.py` — Canalització per a la generació d'analítiques
+- `%appdata%/Aural/` — Base de dades local i registres persistents del sistema
 
 ---
 
@@ -20,27 +41,6 @@
 - **Dynamic Blocking:** `mans.py` enforces active focus by closing unwanted distraction processes via NLP evaluation.
 - **Adaptive Companion:** `fantasma.py` features an emotional/happiness state algorithm that reacts to productivity levels.
 - **Personal Analytics:** `grafics.py` generates visual insights on time allocation using Pandas and Matplotlib.
-
-### 🏗️ Architecture & Modules
-- `ulls.py` — Window monitoring (`pygetwindow`, `pynput`, `psutil`)
-- `mans.py` — Dynamic process manager & window control
-- `fantasma.py` — Interactive visual widget & emotional state logic
-- `grafics.py` — Analytics generation pipeline
-- `%appdata%/Aural/` — Local database & persistent system logs
-
----
-
-<a name="català"></a>
-## 🐱 Resum en Català
-
-**Aural** és un assistent de productivitat intel·ligent, privat i d'execució local dissenyat per reduir les distraccions digitals durant les sessions d'estudi. Desenvolupat com a Treball de Recerca (TDR) de 1r de Batxillerat en 3 mesos, combina el monitoratge del sistema operatiu en temps real amb IA local (Ollama) i un algorisme d'adaptació basat en la "felicitat" de l'assistent.
-
-### ✨ Característiques Principals
-- **IA Privada i Local:** Execució 100% offline amb models `Llama 3.2` i `DeepSeek-R1` via Ollama.
-- **Monitoratge Actiu de SO:** `ulls.py` rastreja la finestra activa i els patrons d'ús en temps real.
-- **Bloqueig Dinàmic:** `mans.py` tanca els processos de distracció a través d'avaluació per PLN (Processament del Llenguatge Natural).
-- **Mascota Adaptativa:** `fantasma.py` gestiona la interfície visual i l'algorisme d'estat d'ànim/hostilitat segons el rendiment.
-- **Analítica Personalitzada:** `grafics.py` processa els registres amb Pandas i Matplotlib per mostrar estadístiques d'estudi.
 
 ---
 
@@ -58,10 +58,10 @@
 
 ---
 
-## 📄 Academic Context & Documentation
+## 📄 Context Acadèmic i Documentació
 
-This repository contains the source code and development logs for the **Aural TDR**. 
+Aquest repositori conté el codi font i els registres de desenvolupament del **TDR Aural**.
 
-- 🌐 **Web Portal:** [Visit project website](https://iaaural.netlify.app) 
-- 📄 **Full Thesis PDF:** Available in `/docs/Memoria_Aural_TDR.pdf`
-- 🛠️ **Methodology:** Developed using a Copilot-assisted software engineering methodology (AI-assisted architecture & rapid prototyping).
+- 🌐 **Lloc Web del Projecte:** [Visita el web del projecte](https://iaaural.netlify.app)
+- 📄 **Memòria Completa en PDF:** Disponible a `/docs/Memoria_Aural_TDR.pdf`
+- 🛠️ **Metodologia:** Desenvolupat utilitzant una metodologia d'enginyeria de programari assistida per Copilot (arquitectura assistida per IA i prototipatge ràpid).
